@@ -9,3 +9,5 @@ upgrade from ATC to pvvx
 btHome library for sensor
 https://github.com/Bluetooth-Devices/bthome-ble
 
+ble sensor parser
+pip install bleparser

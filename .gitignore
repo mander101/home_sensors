@@ -1,4 +1,4 @@
 venv/
-*/.venv/
+xiaomi/.venv/
 .env
 .venv
