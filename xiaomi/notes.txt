@@ -1,0 +1,11 @@
+Update xiaomi firmare to atc
+https://github.com/atc1441/ATC_MiThermometer
+
+upgrade from ATC to pvvx
+- download ATC_v43.bin from the pvvx github
+- flash this one to your LYWSD03MMC using the flasher from ATC github
+- reconnect with the flasher from pvvx github, and set the option to BTHome
+
+btHome library for sensor
+https://github.com/Bluetooth-Devices/bthome-ble
+
