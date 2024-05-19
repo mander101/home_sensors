@@ -5,9 +5,15 @@ upgrade from ATC to pvvx
 - download ATC_v43.bin from the pvvx github
 - flash this one to your LYWSD03MMC using the flasher from ATC github
 - reconnect with the flasher from pvvx github, and set the option to BTHome
+  https://github.com/pvvx/ATC_MiThermometer?tab=readme-ov-file
 
 btHome library for sensor
 https://github.com/Bluetooth-Devices/bthome-ble
 
 ble sensor parser
 pip install bleparser
+
+xiaomi custom firmware broadcasted values are uin16_t
+humidiy needs divide by 100
+temperature ceicusion needs divide by 10
+temperature needs divide by 100
