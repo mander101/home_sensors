@@ -1,0 +1,32 @@
+https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/
+sudo apt update && sudo apt upgrade
+sudo apt install -y mosquitto mosquitto-clients
+sudo systemctl enable mosquitto.service
+mosquitto -v
+
+sudo nano /etc/mosquitto/mosquitto.conf
+add:
+listener 1883
+allow_anonymous true
+
+sudo systemctl restart mosquitto
+
+Enable password authentication
+sudo mosquitto_passwd -c /etc/mosquitto/passwd YOUR_USERNAME
+
+sudo nano /etc/mosquitto/mosquitto.conf
+add to top line:
+per_listener_settings true
+add bottom:
+allow_anonymous false
+listener 1883
+password_file /etc/mosquitto/passwd
+
+sudo systemctl restart mosquitto
+
+
+check if mosquitto running:
+sudo systemctl status mosquitto
+
+username vanpye00
+pass 1264easterlane
